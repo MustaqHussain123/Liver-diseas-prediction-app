@@ -1,0 +1,226 @@
+.main-section {
+  display: flex;
+  align-items: flex-start; /* Align items to the start of the cross-axis */
+  justify-content: space-between; /* Space between the two items */
+  padding: 20px; /* Padding around the section */
+}
+
+/* Styles for the background image */
+.back {
+  width: 35%; /* Adjust width as needed */
+  height: auto;
+  object-fit: cover;
+  filter: drop-shadow(5px 5px 5px #555);
+  position: relative;
+  top: 90px;
+  left: 30px;
+}
+
+/* Styles for the questionnaire container */
+.questionnaire-container {
+  background: linear-gradient(135deg, #ff6f61, #ffccbc); /* Colorful gradient background */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 500px; /* Width of the box */
+  margin: 0; /* No margin needed, handled by flexbox */
+  text-align: center; /* Center text and buttons inside the container */
+  position: relative;
+  bottom: 250px;
+  left: 330px;
+}
+
+/* Title styling */
+.title {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Question box styling */
+.question-box {
+  background-color: #ffffff; /* White background for the question box */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Shrink to fit content */
+}
+
+/* Question styling */
+.question {
+  margin-bottom: 20px;
+  color: #333333; /* Dark gray text for the question */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Answer button styling */
+.answer-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+.answer-button:hover {
+  opacity: 0.9;
+}
+  
+
+.main-homes {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: url('https://catalogue.hc-sc.gc.ca/images/Blue_3.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10%;
+  box-sizing: border-box;
+  margin-top: 80px;
+}
+
+/* Main text styling within main-homes */
+.main-text1 {
+  text-align: center; /* Center-aligns the text */
+  color: #ffffff; /* White text color for contrast */
+  max-width: 600px; /* Max width to limit text block size */
+  /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for better readability */
+  padding: 20px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners for the text block */
+}
+
+/* Main heading style */
+.main-text1 h1 {
+  font-size: 3rem; /* Font size for the main heading */
+  margin-bottom: 1rem; /* Spacing below the heading */
+  font-weight: bold; /* Make the heading bold */
+  line-height: 1.2; /* Adjust line height for better readability */
+  color: white;
+}
+
+/* Main paragraph style */
+.main-text1 p {
+  font-size: 1.25rem; /* Font size for paragraph text */
+  margin-bottom: 1.5rem; /* Spacing below the paragraph */
+  font-style: italic; /* Italicize the text */
+}
+
+/* Main button style */
+.main-btns {
+  display: inline-flex; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: #ff5722; /* Button background color */
+  color: #ffffff; /* Button text color */
+  font-size: 1rem; /* Font size for button text */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.main-btns:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}
+
+/* Container for the appointment form */
+/* Container for the section */
+/* Container for the section */
+.appointment-section {
+  display: flex; /* Use flexbox for horizontal layout */
+  align-items: flex-start; /* Align items to the top of the container */
+  justify-content: space-between; /* Distribute space between items */
+  padding: 20px; /* Padding around the section */
+}
+
+/* Styling for the side image */
+.side {
+  width: 40%; /* Adjust width as needed, e.g., 50% of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container without stretching */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: none; /* Remove box-shadow */
+  background: none; /* Ensure no background effect */
+  position: relative;
+  top: 50px;
+}
+
+/* Styling for the form container */
+.appointment-form-container {
+  width: 50%; /* Adjust width as needed, e.g., 50% of the container */
+  padding: 0; /* Remove padding */
+  border-radius: 0; /* Remove border-radius */
+  box-shadow: none; /* Remove box-shadow */
+  border: none; /* Remove border */
+  background: none; /* Remove background */
+  position: relative;
+  top: 70px;
+}
+
+/* Title for the appointment form */
+.appointment-form-container h1 {
+  margin-bottom: 20px;
+  color: #007bff; /* Bright blue color for the title */
+  font-weight: 600; /* Bold font for emphasis */
+  text-align: center; /* Center align title */
+  font-size: 1.75rem; /* Larger font size */
+}
+
+/* Styling for form inputs and buttons */
+.MuiTextField-root, .MuiFormControl-root {
+  margin-bottom: 12px; /* Space between form elements */
+}
+
+/* Specific styles for text fields */
+.MuiTextField-root input {
+  border-radius: 4px; /* Rounded corners for text fields */
+  padding: 12px; /* Padding inside text fields */
+}
+
+/* Style for the select component */
+.MuiSelect-root {
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #007bff; /* Blue color for the button */
+  color: white;
+  font-size: 1rem;
+  padding: 12px; /* Padding inside the button */
+  border-radius: 4px; /* Rounded corners */
+  text-transform: uppercase; /* Uppercase text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border: none; /* Remove border */
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .appointment-section {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: px; /* Reduced gap */
+  }
+  
+  .side, .appointment-form-container {
+    width: 100%; /* Full width for smaller screens */
+    position: relative;
+    top: 30px;
+
+  }
+  .back {
+    opacity: 0.5; /* Increase opacity for smaller screens for better visibility */
+  }
+}
+
+@media (max-width: 600px) {
+  .appointment-form-container {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .appointment-form-container h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}

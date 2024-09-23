@@ -1,0 +1,145 @@
+/* Main Content Styles */
+.text-head {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+  }
+  
+  /* Form Container */
+  .text-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #ffffff, #e9ecef);
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border: 1px solid #595151;
+    position: relative;
+    transition: padding 0.3s ease;
+  }
+  
+  /* Form Label */
+  .text-lable {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #495057;
+    font-size: 1rem;
+  }
+  
+  /* Form Input */
+  input[type="text"],
+  input[type="number"],
+  .text-select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  .text-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Submit Button */
+.tex-btn[type="submit"] {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .tex-btn[type="submit"]:hover {
+    background: linear-gradient(135deg, #0056b3, #004094);
+    transform: scale(1.02);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+  .text-head {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .text-form {
+      padding: 1.5rem;
+    }
+  
+    .text-head {
+      font-size: 2rem;
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    .text-select {
+      padding: 0.6rem;
+    }
+  
+    .text-btn[type="submit"] {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .text-form {
+      padding: 1rem;
+    }
+  
+    .text-head {
+      font-size: 1.8rem;
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    .text-select {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .text-btn[type="submit"] {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .text-head {
+      font-size: 1.6rem;
+    }
+  
+    .text-form {
+      padding: 0.8rem;
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    .text-select {
+      padding: 0.4rem;
+      font-size: 0.8rem;
+    }
+  
+    .text-btn[type="submit"] {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+    }
+  }
+  
+  

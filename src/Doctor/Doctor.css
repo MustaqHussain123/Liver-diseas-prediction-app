@@ -1,0 +1,472 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(242, 242, 242);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex; /* Ensure flex container */
+  align-items: center; /* Center vertically */
+}
+
+.logos{
+  position: absolute;
+  height: auto;
+  left: 39px;
+  width: 250px;
+}
+
+.navbar-item {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.navbar-item:hover {
+  text-decoration: underline;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+/* Hide the sidebar and show the regular navbar links on larger screens */
+.navbar-links {
+  display: none;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100vh;
+  width: 250px;
+  background-color: #0093a3;
+  color: #fff;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  z-index: 2;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-item {
+  color: #fff;
+  text-decoration: none;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.sidebar-item:hover {
+  text-decoration: underline;
+}
+
+/* Main section styles */
+.main-home {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: url('https://static.vecteezy.com/system/resources/previews/001/775/499/original/health-care-icon-pattern-medical-innovation-concept-background-design-vector.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10%;
+  box-sizing: border-box;
+  margin-top: 80px;
+}
+
+.main-text {
+  text-align: center; /* Center-aligns the text */
+  color: #000000; /* White text color for contrast */
+  max-width: 600px; /* Max width to limit text block size */
+  /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for better readability */
+  padding: 20px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners for the text block */
+}
+
+.main-text h5 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 0;
+}
+
+.main-text h1 {
+  font-size: 3rem; /* Font size for the main heading */
+  margin-bottom: 1rem; /* Spacing below the heading */
+  font-weight: bold; /* Make the heading bold */
+  line-height: 1.2; /* Adjust line height for better readability */
+  color: rgb(0, 0, 0);
+}
+
+.main-text p {
+  font-size: 1.25rem; /* Font size for paragraph text */
+  margin-bottom: 1.5rem; /* Spacing below the paragraph */
+  font-style: italic; /* Italicize the text */
+}
+
+.main-btn {
+  display: inline-flex; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: #ff5722; /* Button background color */
+  color: #ffffff; /* Button text color */
+  font-size: 1rem; /* Font size for button text */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.main-btn:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+
+}
+
+.piechart {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* New styles for the cards */
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  padding: 16px;
+  height: calc(100vh - 80px);
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  animation: medical-bg-animation 20s infinite;
+  position: relative;
+  top: 60px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.card-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-text {
+  padding: 16px;
+  font-size: 16px;
+  color: #333;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-text h5{
+  position: relative;
+  bottom: 19px;
+  text-align: center;
+
+}
+
+/* Logo styles */
+.logo {
+  position: absolute;
+  bottom: 5%; /* Distance from the bottom of the section */
+  right: 5%;  /* Distance from the right of the section */
+  max-width: 20%; /* Responsive width, adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.front{
+  width: 30%; /* Ensure the image covers the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; 
+    top: 28%; 
+    left: 60%;   
+    object-fit: cover; 
+
+}
+
+.cards-section h1 {
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  color: #000; /* Set the color of the text */
+  text-align: center; /* Center the text horizontally */
+  margin: 0; /* Remove default margin */
+  padding: 1rem; /* Add padding around the text */
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase; /* Transform the text to uppercase */
+  position: absolute; /* Ensure positioning context */
+  top: 1px; /* Ensure it's positioned at the top */
+  z-index: 1; /* Ensure it's above other elements */
+}
+
+.aboutus {
+  padding: 60px; /* Increased padding for better spacing */
+  background-color: #f9f9f9; /* Light background for contrast */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the left */
+  justify-content: center; /* Center content vertically */
+  position: relative;
+}
+
+.aboutus h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark color for the heading */
+  margin: auto;
+
+}
+
+.aboutus p {
+  font-size: 1rem;
+  line-height: 1.7; /* Improved readability */
+  color: #555; /* Slightly lighter color for the paragraph */
+  max-width: 600px; /* Limit the width for better readability */
+  margin-left: 40px; /* Space between the heading and paragraph */
+  position: relative;
+  bottom: 100px;
+  
+}
+.aboutus h3{
+  position: relative;
+  left: 60px;
+  bottom: 87px;
+  font-size: 1.7rem;
+
+}
+.abot{
+  width: 30%; /* Ensure the image covers the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; 
+    top: 28%; 
+    left: 60%;   
+    object-fit: cover; 
+}
+
+.aboutus span{
+  color: #0195ff;
+}
+.cards-section span{
+  color: #0195ff;
+
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image,
+.sidebar-profile-image {
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  border-radius: 50%; /* Circular image */
+  margin-right: 10px; /* Space between image and input */
+}
+
+.edit-btn {
+  min-width: 0; /* To avoid width issue */
+  padding: 0;
+  margin-left: 5px; /* Space between image and button */
+}
+
+.image-input {
+  display: none; /* Hide the default file input */
+}
+
+
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide navbar links on smaller screens */
+  }
+
+  .menu-btn {
+    display: block; /* Show the hamburger menu on smaller screens */
+  }
+
+  .sidebar {
+    display: flex; /* Show the sidebar on smaller screens */
+  }
+
+  .sidebar.open {
+    left: 0; /* Ensure the sidebar is visible when open */
+  }
+
+  .piechart {
+    display: none; /* Hide the pie chart on smaller screens */
+  }
+  .logo{
+    display: none;
+  }
+  .front{
+    position: absolute;
+   top: 97px;
+   left: 160px;
+
+  }
+
+  .logo {
+    max-width: 40%; /* Increase logo size on smaller screens */
+    bottom: 10%; /* Adjust positioning for better visibility */
+    right: 2%;  /* Adjust positioning for better visibility */
+  }
+  .cards-section h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+    position: relative;
+    top: 1px;
+  }
+  .aboutus {
+    padding: 40px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .aboutus h1 {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .aboutus p {
+    font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    margin-left: 0; /* Remove left margin on smaller screens */
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Add padding to ensure text fits well */
+    position: relative;
+    top: 20px;
+  }
+  .aboutus h3{
+    font-size: 1.2rem; /* Adjust paragraph size for smaller screens */
+    margin-left: 0; /* Remove left margin on smaller screens */
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Add padding to ensure text fits well */
+    position: relative;
+    top: 30px;
+    left: 1px;
+  }
+  .abot{
+    position: relative;
+    bottom: 2px;
+    left: 130px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    display: none; /* Hide sidebar on larger screens */
+  }
+
+  .menu-btn {
+    display: none; /* Hide the hamburger menu on larger screens */
+  }
+
+  .navbar-links {
+    display: flex; /* Show links in navbar on larger screens */
+  }
+
+}
+
+@media (max-width: 480px) {
+  .navbar-item {
+    font-size: 0.9rem; /* Adjust font size for very small screens */
+    margin: 0 0.5rem; /* Adjust spacing for very small screens */
+  }
+
+  .main-text h1 {
+    font-size: 2.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .main-text p {
+    font-size: 1rem; /* Adjust paragraph size for smaller screens */
+  }
+
+  .main-btn {
+    font-size: 0.875rem; /* Adjust button font size for smaller screens */
+  }
+
+  .piechart {
+    max-width: 300px; /* Reduce max-width for smaller screens */
+  }
+
+  .card {
+    width: 100%; /* Make card width responsive */
+    max-width: 300px; /* Adjust max width */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .logo {
+    max-width: 40%; /* Further increase logo size for very small screens */
+    bottom: 5%; /* Adjust positioning for better visibility */
+    right: 5%;  /* Adjust positioning for better visibility */
+  }
+  .cards-section h1 {
+    font-size: 1.75rem; /* Further adjust font size for very small screens */
+    padding: 0.25rem; /* Further adjust padding for very small screens */
+    /* position: relative;
+    top: 20px; */
+  }
+  .aboutus h1 {
+    font-size: 1.8rem; /* Further adjust heading size for very small screens */
+    
+  }
+
+  .aboutus p {
+    font-size: 0.9rem; /* Further adjust paragraph size for very small screens */
+    padding: 0 10px; /* Adjust padding for very small screens */
+  }
+}

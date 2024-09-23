@@ -1,0 +1,78 @@
+/* Admin.css */
+.container {
+  padding: 20px;
+  background-color: #073665; /* Light background */
+}
+
+.table-container {
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.table-head {
+  background-color: #2196f3; /* Blue header background */
+  color: #ffffff; /* White text */
+}
+
+.table-title {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.table-cell {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.table-row {
+  background-color: #ffffff; /* White row background */
+}
+
+.table-row:nth-of-type(odd) {
+  background-color: #e3f2fd; /* Light blue for odd rows */
+}
+
+.button {
+  margin: 5px;
+}
+
+.button-delete {
+  background-color: #f44336; /* Red for delete button */
+  color: #ffffff; /* White text */
+}
+
+.button-edit {
+  background-color: #4caf50; /* Green for edit button */
+  color: #ffffff; /* White text */
+}
+
+.dialog-title {
+  background-color: #303f9f; /* Dark blue dialog title */
+  color: #ffffff; /* White text */
+}
+
+.dialog-content {
+  background-color: #ffffff; /* White content background */
+}
+
+.text-field {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .table-container {
+    max-width: 100%;
+  }
+}
